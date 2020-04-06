@@ -22,7 +22,11 @@ pipeline {
     	     bat 'dotnet build MarysMajesticMovies.sln'
      	}
        }	
-       
+        stage('Pack') {
+   	steps {
+    	    bat 'dotnet pack --no-build --output nupkgs'
+   	}
+      }
        
        
      }
