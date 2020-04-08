@@ -15,7 +15,7 @@ namespace MarysMajesticMovies
         [Required]
         public DateTime YearReleased { get; set; }
         [Required]
-        public TimeSpan Length { get; set; }
+        public string Length { get; set; }
         [Required]
         public string Genre { get; set; }
         [Required]
@@ -26,5 +26,7 @@ namespace MarysMajesticMovies
         public string Plot { get; set; }
         [Required]
         public int ImdbRating { get; set; }
+        [Required]
+        public string PosterUrl { get; set; }
     }
 }

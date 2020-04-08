@@ -14,6 +14,8 @@ namespace MarysMajesticMovies
         }
 
         public DbSet<Users> Users { get; set; }
+        public DbSet<Movies> Movies { get; set; }
+
 
     }
 }
