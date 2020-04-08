@@ -11,7 +11,7 @@ namespace MarysMajesticMovies
         [Required]
         public string Password { get; set; }
         [Required]
-        public string ForeName { get; set; }
+        public string FirstName { get; set; }
         [Required]
         public string LastName { get; set; }
         [Required]
