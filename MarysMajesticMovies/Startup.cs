@@ -23,8 +23,8 @@ namespace MarysMajesticMovies
             services.AddDbContext<StoreDbContext>(
                 option => option.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"))
             );
-            
-            services.AddControllersWithViews();
+
+            services.AddControllersWithViews().AddRazorRuntimeCompilation();
 
             // In production, the React files will be served from this directory
             services.AddSpaStaticFiles(configuration =>
