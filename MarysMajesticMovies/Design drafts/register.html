@@ -4,29 +4,26 @@
   <script type="text/javascript" src="script.js"></script>
   <link href="style.css" rel="stylesheet" type="text/css">
 </head>
-<body>
+<body id="registerbody">
   <div class="register">
     <img src="logo.png" alt="logo" width="90%">
-    <h1> Registera </h1>
+    <h1> Skapa ett kundkonto </h1>
     <form>
-      <label for="fname">Förnamn:</label><br>
-      <input type="text" id="fname" name="fname" placeholder="Förnamn"><br>
-      <label for="lname">Efternamn:</label><br>
-      <input type="text" id="lname" name="lname" placeholder="Efternamn"><br><br>
+      <label for="fname">Namn</label><br>
+      <input type="text" id="fname" name="fname" placeholder="Förnamn*"><br>
+      <input type="text" id="lname" name="lname" placeholder="Efternamn*"><br><br>
 
-      <label for="fname">Adress:</label><br>
-      <input type="text" id="adress" name="adress" placeholder="Adress"><br>
-      <label for="lname">Stad:</label><br>
-      <input type="text" id="city" name="city" placeholder="Stad"><br>
-      <label for="lname">Postnummer:</label><br>
-      <input type="text" id="zipcode" name="zipcode" placeholder="Postnummer"><br>
-      <label for="lname">Telefon:</label><br>
+      <label for="fname">Leverans- och fakturauppgifter</label><br>
+      <input type="text" id="adress" name="adress" placeholder="Adress*"><br>
+      <input type="text" id="city" name="city" placeholder="Stad*"><br>
+      <input type="text" id="zipcode" name="zipcode" placeholder="Postnummer*"><br>
       <input type="text" id="phone" name="phone" placeholder="Telefon"><br><br>
 
-      <label for="fname">Mailadress:</label><br>
-      <input type="text" id="mailadress" name="mailadress" placeholder="Mailadress"><br>
-      <label for="lname">Lösenord:</label><br>
-      <input type="password" id="password" name="password" placeholder="Lösenord"><br><br>
+      <label for="fname">Inloggningsuppgifter</label><br>
+      <input type="text" id="mailadress" name="mailadress" placeholder="Mailadress*"><br>
+      <input type="password" id="password" name="password" placeholder="Lösenord*"><br>
+      <input type="password" id="verifypassword" name="verifypassword" placeholder="Verifiera ditt lösenord*"><br>
+      * Obligatoriskt.
       <input type="submit" value="Registrera">
       Genom att registrera så godkänner du våra villkor.
     </form>
