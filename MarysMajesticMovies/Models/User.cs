@@ -2,7 +2,7 @@
 
 namespace MarysMajesticMovies
 {
-    public class Users
+    public class User
     {
         [Key]
         public int Id { get; set; }
@@ -22,5 +22,7 @@ namespace MarysMajesticMovies
         public string City { get; set; }
         [Required]
         public int Telephone { get; set; }
+        [Required]
+        public bool IsAdmin { get; set; }
     }
 }
