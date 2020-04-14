@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace MarysMajesticMovies
 {
-    public class Movies
+    public class Movie
     {
         [Key]
         public int Id { get; set; }
@@ -13,9 +13,9 @@ namespace MarysMajesticMovies
         [Required]
         public string Title { get; set; }
         [Required]
-        public DateTime YearReleased { get; set; }
+        public int Year { get; set; }
         [Required]
-        public string Length { get; set; }
+        public string RunTime { get; set; }
         [Required]
         public string Genre { get; set; }
         [Required]
@@ -28,5 +28,11 @@ namespace MarysMajesticMovies
         public int ImdbRating { get; set; }
         [Required]
         public string PosterUrl { get; set; }
+        [Required]
+        public string TrailerUrl { get; set; }
+        [Required]
+        public int Price { get; set; }
+        [Required]
+        public int InStock { get; set; }
     }
 }

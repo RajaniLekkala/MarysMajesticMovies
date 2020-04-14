@@ -21,7 +21,6 @@ namespace MarysMajesticMovies
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<StoreDbContext>(option => {
-            {
                 option.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
             });
 
