@@ -4,28 +4,29 @@
   <script type="text/javascript" src="script.js"></script>
   <link href="style.css" rel="stylesheet" type="text/css">
 </head>
-<body id="registerbody">
+<body id="mainpagebody">
+  <div class="banner3"></div>
   <div class="register">
-    <img src="logo.png" alt="logo" width="90%">
-    <h1> Skapa ett kundkonto </h1>
+    <h1> Create an account </h1>
     <form>
-      <label for="fname">Namn</label><br>
-      <input type="text" id="fname" name="fname" placeholder="Förnamn*"><br>
-      <input type="text" id="lname" name="lname" placeholder="Efternamn*"><br><br>
+      <label for="fname">Name</label><br>
+      <input type="text" id="fname" name="fname" placeholder="First name*"><br>
+      <input type="text" id="lname" name="lname" placeholder="Last name*"><br><br>
 
-      <label for="fname">Leverans- och fakturauppgifter</label><br>
+      <label for="fname">Billing and shippingadress</label><br>
       <input type="text" id="adress" name="adress" placeholder="Adress*"><br>
-      <input type="text" id="city" name="city" placeholder="Stad*"><br>
-      <input type="text" id="zipcode" name="zipcode" placeholder="Postnummer*"><br>
-      <input type="text" id="phone" name="phone" placeholder="Telefon"><br><br>
+      <input type="text" id="city" name="city" placeholder="City*"><br>
+      <input type="text" id="zipcode" name="zipcode" placeholder="Zipcode*"><br>
+      <input type="text" id="phone" name="phone" placeholder="Phone"><br><br>
 
-      <label for="fname">Inloggningsuppgifter</label><br>
-      <input type="text" id="mailadress" name="mailadress" placeholder="Mailadress*"><br>
-      <input type="password" id="password" name="password" placeholder="Lösenord*"><br>
-      <input type="password" id="verifypassword" name="verifypassword" placeholder="Verifiera ditt lösenord*"><br>
-      * Obligatoriskt.
-      <input type="submit" value="Registrera">
-      Genom att registrera så godkänner du våra villkor.
+      <label for="fname">Account details</label><br>
+      <input type="text" id="mailadress" name="mailadress" placeholder="Email*"><br>
+      <input type="password" id="password" name="password" placeholder="Password*"><br>
+      <input type="password" id="verifypassword" name="verifypassword" placeholder="Verify your password*"><br>
+      * Mandatory input.
+      <br><br>
+      <input type="submit" value="Create"><br>
+      By creating an account, you accept our <a href="#">Terms & Conditions</a>.
     </form>
   </div>
 </body>
