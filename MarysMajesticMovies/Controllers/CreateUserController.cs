@@ -11,11 +11,11 @@ namespace MarysMajesticMovies.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class CreateAccountController : ControllerBase
+    public class CreateUserController : ControllerBase
     {
         private readonly StoreDbContext _context;
 
-        public CreateAccountController(StoreDbContext context)
+        public CreateUserController(StoreDbContext context)
         {
             _context = context;
         }
