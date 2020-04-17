@@ -12,11 +12,7 @@ pipeline {
               bat "dotnet restore"
             }
         }
-        stage('Clean') {
-   	steps {
-    	    bat 'dotnet clean'
-   	}
-       }
+        
        stage('Build') {
      	steps {
     	     bat 'dotnet build MarysMajesticMovies.sln'
@@ -27,8 +23,18 @@ pipeline {
     	    bat 'dotnet pack --no-build --output nupkgs'
    	}
       }
-       
-       
+       stage('Run') {
+            steps {
+                bat 'START /B dotnet C:/Users/rajani/.jenkins/workspace/testProject/MarysMajesticMovies/bin/Debug/netcoreapp3.1/MarysMajesticMovies.dll'
+            }
+        }
+        stage('UI tests') {
+            steps {
+                   
+                    bat 'robot movies.robot'
+            }
+        }
      }
+     
     
  }
